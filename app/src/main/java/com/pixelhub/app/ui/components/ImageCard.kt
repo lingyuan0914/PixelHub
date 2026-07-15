@@ -21,6 +21,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.pixelhub.app.domain.model.ImageItem
 import timber.log.Timber
+import top.yukonga.miuix.kmp.supercomponent.*
 
 @Composable
 fun ImageCard(
@@ -41,9 +42,7 @@ fun ImageCard(
 
     Card(
         modifier = modifier.fillMaxWidth().clickable(onClick = onImageClick),
-        shape = RoundedCornerShape(12.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
+        shape = RoundedCornerShape(12.dp)
     ) {
         Box {
             var isLoading by remember { mutableStateOf(true) }
@@ -74,8 +73,7 @@ fun ImageCard(
 
             if (isLoading) {
                 CircularProgressIndicator(
-                    modifier = Modifier.align(Alignment.Center).size(24.dp),
-                    strokeWidth = 2.dp
+                    modifier = Modifier.align(Alignment.Center).size(24.dp)
                 )
             }
 

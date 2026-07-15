@@ -23,6 +23,7 @@ import com.pixelhub.app.ui.viewmodel.SettingsViewModel
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
+import top.yukonga.miuix.kmp.supercomponent.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -36,7 +37,7 @@ fun SettingsScreen(viewModel: SettingsViewModel = hiltViewModel()) {
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-            TopAppBar(title = { Text("设置") }, scrollBehavior = scrollBehavior)
+            TopAppBar(title = { Text("设置") })
         }
     ) { innerPadding ->
         LazyColumn(

@@ -42,6 +42,19 @@ import com.pixelhub.app.ui.theme.PixelHubTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
+import top.yukonga.miuix.kmp.supercomponent.Scaffold
+import top.yukonga.miuix.kmp.supercomponent.TopAppBar
+import top.yukonga.miuix.kmp.supercomponent.NavigationBar
+import top.yukonga.miuix.kmp.supercomponent.NavigationBarItem
+import top.yukonga.miuix.kmp.supercomponent.FloatingActionButton
+import top.yukonga.miuix.kmp.supercomponent.Icon
+import top.yukonga.miuix.kmp.supercomponent.Text
+import top.yukonga.miuix.kmp.supercomponent.Surface
+import top.yukonga.miuix.kmp.supercomponent.Box
+import top.yukonga.miuix.kmp.supercomponent.Row
+import top.yukonga.miuix.kmp.supercomponent.Column
+import top.yukonga.miuix.kmp.supercomponent.Modifier
+import top.yukonga.miuix.kmp.supercomponent.MaterialTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

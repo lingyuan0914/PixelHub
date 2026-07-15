@@ -1,6 +1,7 @@
 package com.pixelhub.app.ui.screens.favorites
 
 import androidx.compose.foundation.layout.*
+import top.yukonga.miuix.kmp.supercomponent.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -36,8 +37,7 @@ fun FavoritesScreen(viewModel: FavoritesViewModel = hiltViewModel()) {
                         IconButton(onClick = { viewModel.toggleBatchMode() }) { Icon(Icons.Default.Checklist, "批量") }
                         IconButton(onClick = { viewModel.showCreateGroupDialog() }) { Icon(Icons.Default.CreateNewFolder, "新建分组") }
                     }
-                },
-                scrollBehavior = scrollBehavior
+                }
             )
         }
     ) { innerPadding ->

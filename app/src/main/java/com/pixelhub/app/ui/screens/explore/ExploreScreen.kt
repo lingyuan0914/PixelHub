@@ -1,6 +1,7 @@
 package com.pixelhub.app.ui.screens.explore
 
 import androidx.compose.foundation.layout.*
+import top.yukonga.miuix.kmp.supercomponent.*
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridItemSpan
@@ -82,8 +83,7 @@ fun ExploreScreen(viewModel: ExploreViewModel = hiltViewModel()) {
                             )
                         }
                     }
-                },
-                scrollBehavior = scrollBehavior
+                }
             )
         }
     ) { innerPadding ->

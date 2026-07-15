@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.pixelhub.app"
-        minSdk = 28
+        minSdk = 31
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
@@ -115,6 +115,10 @@ dependencies {
 
     // Liquid Glass Effect
     implementation("io.github.kyant0:backdrop:2.0.0")
+
+    // Miuix UI
+    implementation("top.yukonga.miuix.kmp:miuix-ui:0.9.0")
+    implementation("top.yukonga.miuix.kmp:miuix-blur:0.9.0")
 
     // Debug
     debugImplementation("androidx.compose.ui:ui-tooling")
